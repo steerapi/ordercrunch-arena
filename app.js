@@ -11,8 +11,13 @@ ss.client.define('main', {
   tmpl: '*'
 });
 
+// Serve this client on the root URL
+ss.http.route('/', function(req, res){
+  res.serveClient('main');
+});
+
 // Define a single-page client called 'main'
-ss.client.define('main', {
+ss.client.define('business', {
   view: 'app.html',
   css:  ['libs/reset.css', 'app.styl'],
   code: ['libs/jquery.min.js', 'app'],
@@ -20,15 +25,17 @@ ss.client.define('main', {
 });
 
 // Serve this client on the root URL
-ss.http.route('/', function(req, res){
-  res.serveClient('main');
+ss.http.route('/business', function(req, res){
+  res.serveClient('business');
 });
 
 // Code Formatters
 ss.client.formatters.add(require('ss-stylus'));
+ss.client.formatters.add(require('ss-coffee'));
 
 // Use server-side compiled Hogan (Mustache) templates. Others engines available
-ss.client.templateEngine.use(require('ss-hogan'));
+// ss.client.templateEngine.use(require('ss-hogan'));
+// ss.client.templateEngine.use(require('ss-jade'));
 
 // Minimize and pack assets if you type: SS_ENV=production node app.js
 if (ss.env === 'production') ss.client.packAssets();
