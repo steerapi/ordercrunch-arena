@@ -1,8 +1,8 @@
 {
   "name": "ordercrunch-areana",
-  "description": "An awesome real time application",
+  "description": "An awesome Ordercrunch Arena",
   "version": "0.0.1",
-  "author": "Me <me@mydomain.com>",
+  "author": "Ordercrunch <support@ordercrunchapp.com>",
   "private": true,
   "engines": { "node": ">= 0.6.0" },
   "dependencies": {

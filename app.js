@@ -1,7 +1,15 @@
-// My SocketStream 0.3 app
+// Ordercrunch Arena
 
 var http = require('http'),
     ss = require('socketstream');
+
+// Define a single-page client called 'main'
+ss.client.define('main', {
+  view: 'app.html',
+  css:  ['libs/reset.css', 'app.styl'],
+  code: ['libs/jquery.min.js', 'app'],
+  tmpl: '*'
+});
 
 // Define a single-page client called 'main'
 ss.client.define('main', {
@@ -25,9 +33,10 @@ ss.client.templateEngine.use(require('ss-hogan'));
 // Minimize and pack assets if you type: SS_ENV=production node app.js
 if (ss.env === 'production') ss.client.packAssets();
 
+console.log(process.env.PORT);
 // Start web server
 var server = http.Server(ss.http.middleware);
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 
 // Start SocketStream
 ss.start(server);
