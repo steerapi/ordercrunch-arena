@@ -75,3 +75,46 @@ h1
       width 70px
       text-align right
       font-size 0.7em
+
+#mainCarousel,#drinkCarousel,#gearCarousel
+  width: 100%;			
+  height: 300px;
+
+.stylish {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 66px;
+  border: 4px double #ccc;
+  font-size: 20px;
+  color: #666;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  background: #ddd
+}
+.stylish:hover {
+  border: 4px double #bbb;
+  color: #aaa;
+  text-decoration: none;
+  background: #e6e6e6
+}
+.center
+  margin:0 auto;
+  float:none;
+// .element {
+//   opacity: 0.0;
+//   transform: scale(0.95) translate3d(0,100%,0);
+//   transition: transform 400ms ease, opacity 400ms ease;
+// }
+.element.active {
+  position: fixed;
+  transition: left 400ms, top 400ms;
+}
+// .element.inactive {
+//   position: fixed;
+//   left: 100px;
+//   top: 100px;
+//   transition: left 400ms, top 400ms;
+// }
