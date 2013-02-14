@@ -50,7 +50,7 @@ ss.http.route('/customer', function(req, res) {
 //   res.serveClient('business');
 // });
 
-// ss.ws.transport.use(require('ss-sockjs'));
+ss.ws.transport.use(require('ss-sockjs'));
 // ss.ws.transport.use('socketio', {client:{host:'surat.ordercrunch-arena.jit.su', port:80}});
 
 // Code Formatters
