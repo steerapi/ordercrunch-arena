@@ -1,0 +1,282 @@
+/*
+
+Mobile App Splash Page Template by MediaLoot
+URL: http://medialoot.com/item/mobile-app-splash-page-template
+
+Designer: Tony Thomas
+
+*/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*  background: url(../images/photo-bg-1.jpg) no-repeat center top;*/
+	margin: 0;padding: 0;
+}
+
+.photo-1 {background: url(../images/photo-bg-1.jpg) no-repeat center top;}
+.photo-2 {background: url(../images/photo-bg-2.jpg) no-repeat center top;}
+.photo-3 {background: url(../images/photo-bg-3.jpg) no-repeat center top;}
+.photo-4 {background: url(../images/photo-bg-4.jpg) no-repeat center top;}
+
+.banner {
+	height: 550px;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.clear {
+	clear: both;
+}
+
+.banner h1 {
+	width: 620px;
+	font-family: 'LeagueGothicRegular';
+	font-size: 84px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	line-height: 1;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.50);
+	margin: 80px 0 0 0;
+	position: absolute;
+	top: 0px; left: 0;
+}
+
+.banner h2 {
+	width: 620px;
+	font-family: 'LeagueGothicRegular';
+	font-size: 46px;
+	color: black;
+	color: rgba(0,0,0,0.75);
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	line-height: 1;
+	text-shadow: 0 1px 25px rgba(255,255,255,0.6);
+/*  text-shadow: 0 1px 3px rgba(255,255,255,0.25);*/
+	position: absolute;
+	top: 250px; left: 0;
+}
+
+a.download-btn {
+	text-indent: -4999px;
+	display: block;
+	width: 224px;
+	height: 74px;
+	float: left;
+	margin: 0 20px 0 0;
+	position: absolute;
+}
+
+img.qr {
+	text-indent: -4999px;
+	display: block;
+	width: 224px;
+	height: 74px;
+	float: left;
+	margin: 0 20px 0 0;
+	position: absolute;
+}
+img.qrappstore {
+	top: 600px; left: 0;
+}
+img.qrandroid {
+	top: 600px; left: 0;
+}
+
+a.appstore {
+	background: url(../images/download-app-store.png) no-repeat;
+	top: 400px; left: 0;
+}
+
+a.android {
+	background: url(../images/download-android.png) no-repeat;
+	top: 400px; left: 240px;
+}
+
+a.mobileweb {
+	background: url(../images/mobileweb.png) no-repeat;
+	top: 400px; left: 480px;
+}
+
+.iphone-5 {
+	width: 268px;
+	height: 586px;
+	display: block;
+	float: right;
+	position: absolute;
+	top: 20px; right: 0px;
+	background: url(../images/iphone-5.png);
+}
+
+.iphone-5 img {
+	margin: 84px 0 0 23px;
+}
+
+.galaxy-s3 {
+	width: 287px;
+	height: 583px;
+	display: block;
+	float: right;
+	position: absolute;
+	top: 20px; right: 50px;
+	background: url(../images/galaxy-s3.png);
+}
+
+.galaxy-s3 img {
+	margin: 52px 0 0 19px;
+}
+
+.page-content {
+	background: #f5f5f5 url(../images/background.png) repeat;
+/*  min-height: 600px;*/
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #eee;
+}
+
+h3 {
+	text-align: center;
+	color: #3e444a;
+	font-family: 'LeagueGothicRegular';
+	font-size: 62px;
+	text-transform: uppercase;
+	margin: 40px 0 0 0;
+	letter-spacing: -1px;
+	text-shadow: 0 1px 0 #fff;
+}
+
+ol {
+	text-align: left;
+	color: #858585;
+	font-size: 20px;
+	font-weight: lighter;
+	margin: 10px 0 0 0;
+	text-shadow: 0 1px 0 #fff;
+	letter-spacing: 1px;
+}
+
+p {
+	text-align: left;
+	color: #858585;
+	font-size: 20px;
+	font-weight: lighter;
+	margin: 10px 0 0 0;
+	text-shadow: 0 1px 0 #fff;
+	letter-spacing: 1px;
+}
+
+.hr {
+	width: 960px;
+	height: 11px;
+	background: url(../images/hr.png) no-repeat;
+	display: block;
+	margin: 40px auto;
+}
+
+ul.steps {
+	list-style: none;
+	width: 960px;
+	height: 330px;
+	margin: 0 auto;
+}
+ul.qr {
+	list-style: none;
+	width: 960px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+ul.steps li {
+	float: left;
+	width: 300px;
+	margin: 0 10px;
+}
+
+ul.qr li{
+	float: left;
+	width: 450px;
+	margin: 0 10px;
+}
+
+ul.steps li.step-1 {
+	background: url(../images/step-1.png) no-repeat center top;
+}
+ul.steps li.step-2 {
+	background: url(../images/step-2.png) no-repeat center top;
+}
+ul.steps li.step-3 {
+	background: url(../images/step-3.png) no-repeat center top;
+}
+
+.steps h4 {
+	font-size: 22px;
+	color: #353434;
+	text-align: center;
+	margin: 135px 0 15px 0;
+}
+.qr h4 {
+	font-size: 22px;
+	color: #353434;
+	text-align: center;
+	margin: 220px 0 15px 0;
+}
+
+.steps p {
+	font-size: 14px;
+	color: #a6adb6;
+	margin: 0;
+	letter-spacing: 0px;
+}
+
+.footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.footer .logo {
+	width: 228px;
+	height: 45px;
+	background: url(../images/logo.png);
+	text-indent: -4999px;
+	float: left;
+	margin: 30px 0 20px 0;
+}
+
+.footer .tagline {
+	float: left;
+  margin: 45px 0 0 20px;
+	color: #858585;
+	font-size: 16px;
+	font-weight: lighter;
+/*  letter-spacing: 1px;*/
+}
+
+.footer .tagbtnwrapper {
+	float: left;
+  margin: 30px 0 20px 0;
+	color: #858585;
+/*  font-size: 16px;*/
+  font-weight: lighter;
+	height: 45px;
+}
+
+.footer .tagbtn {
+	float: left;
+  margin: 30px 0 20px 0;
+	color: #858585;
+/*  font-size: 16px;*/
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+
+
+.copyright {
+	clear: both;
+	border-top: 1px solid #eee;
+	padding: 20px 0 40px 0;
+	color: #858585;
+	font-size: 12px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}

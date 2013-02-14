@@ -1,14 +1,21 @@
 {
   "name": "ordercrunch-areana",
   "description": "An awesome Ordercrunch Arena",
-  "version": "0.0.1",
+  "version": "0.0.1-10",
   "author": "Ordercrunch <support@ordercrunchapp.com>",
   "private": true,
-  "engines": { "node": ">= 0.6.0" },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
   "dependencies": {
     "socketstream": "0.3.x",
     "ss-stylus": "0.1.x",
     "ss-hogan": "0.1.x",
-    "ss-coffee": "*"
+    "ss-coffee": "*",
+    "ss-sockjs": "*"
+  },
+  "subdomain": "surat.ordercrunch-arena",
+  "scripts": {
+    "start": "app.js"
   }
 }

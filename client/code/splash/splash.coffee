@@ -11,3 +11,4 @@ window.app = angular.module("OCArenaApp", []).config(["$routeProvider", "$locati
     templateUrl: "more.html"
   $locationProvider.html5Mode true
 ])
+angular.bootstrap(document, ['OCArenaApp'])

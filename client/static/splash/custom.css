@@ -1,0 +1,12 @@
+ul.qr li.qrandroid {
+	background: url('../images/qrandroid.png') no-repeat center top;
+}
+ul.qr li.qritunes {
+	background: url('../images/qritunes.png') no-repeat center top;
+}
+.photo-mit {
+	background: url('../images/photo-bg-mit.png') no-repeat center top;
+}
+.photo-mit-vi {
+	background: url('../images/photo-bg-mit-vi.png') no-repeat center top;
+}

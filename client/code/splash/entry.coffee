@@ -12,6 +12,4 @@ ss.server.on "reconnect", ->
 ss.server.on "ready", ->
   # Wait for the DOM to finish loading
   jQuery ->
-    # Load app
-    require "/splash"
-    angular.bootstrap(document, ['OCArenaApp'])
+		require "/splash"

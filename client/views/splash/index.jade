@@ -1,0 +1,39 @@
+!!! 5
+html
+head
+  meta(charset='utf-8')
+  script(src="components/jquery/jquery.js")
+  script(src="components/angular/angular.js")
+  != SocketStream
+  title OrderCrunch Arena
+  link(rel='stylesheet', href='components/bootstrap/bootstrap/css/bootstrap.css', type='text/css', media='screen')
+  link(rel='stylesheet', href='splash/ml-mobile-app-splash.css', type='text/css', media='screen')
+  link(rel='stylesheet', href='splash/styles.css', type='text/css', media='screen')
+  link(rel='stylesheet', href='splash/custom.css', type='text/css', media='screen')
+  link(rel='stylesheet', href='fonts/stylesheet.css', type='text/css', media='screen')
+
+body
+  script(id="main.html",type="text/ng-template")
+    include main
+  script(id="about.html",type="text/ng-template")
+    include about
+  script(id="careers.html",type="text/ng-template")
+    include careers
+  script(id="legal.html",type="text/ng-template")
+    include legal
+  script(id="more.html",type="text/ng-template")
+    include more
+  div(ng-view)
+  .footer
+    // <img src="../images/logo.png"></img><div class="tagline"></div> 
+    a(href='/')
+      .logo OrderCrunch Arena
+    .tagline More Powerful Ordering
+    .tagbtnwrapper(style='float: right;')
+      a.btn.ml-button-1.tagbtn(href='/mobile', style='margin-right: 20px;') Mobile Web
+      a.btn.ml-button-1.tagbtn(href='/more', style='margin-right: 20px;') Learn more
+      a.btn.ml-button-1.tagbtn(href='/business') Become a merchant
+    .copyright
+      | Copyright Notice © 2013 OrderCrunch. All Rights Reserved. 
+      include link.html
+      span(style='display: block; padding-top: 15px; position: absolute;') *TechCash only available at MIT.

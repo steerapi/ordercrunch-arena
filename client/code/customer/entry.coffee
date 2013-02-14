@@ -11,7 +11,6 @@ ss.server.on "ready", ->
   jQuery ->
     # Load app
     require "/customer"
+    require "/carousel"
     require "/animate"
-    # angular.bootstrap(document, ['OCArenaApp'])
-
 # $('.element').clone().clonePosition($('.element')).css('position','fixed').appendTo($('body')).animate(target, 1000, function(){ $(this).remove(); });
