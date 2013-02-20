@@ -1,0 +1,15 @@
+div(data-role="header")
+  h1
+    | Account
+div(data-role="content")
+  #editAccount.flip-container
+    .flip-login.flipped
+      .back
+        h2.white Edit Account
+        form
+          input.input(data-role="none", ng-model="name", type='text', placeholder='Real Name')
+          input.input(data-role="none", ng-model="email", type='text', placeholder='Email Address')
+          input.create-btn(data-role="none", type='button', value='Reset Password')
+          input.back-btn.flip-btn(data-role="none", type='button', value='Save')
+
+include footer

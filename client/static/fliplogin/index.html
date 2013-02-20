@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<title>CSS3 Flip Login Box</title>
+	<link rel="stylesheet" type="text/css" href="ml-flip-login.css">
+	<!--[if IE 9]>
+	<link rel="stylesheet" type="text/css" href="ie.css">
+	<![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.flip-btn').click(function () {
+		  	$('.flip-login').toggleClass('flipped');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		 
+		<div class="flip-login ">
+		
+			<div class="front">
+				<a href="#" class="facebook"><span class="icon"></span><span>Login with Facebook</span></a>
+				<a href="#" class="twitter"><span class="icon"></span><span>Login with Twitter</span></a>
+				<div class="or-divider">or</div>
+				<form class="login-bg">
+					<input type="text" class="input" value="Email Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Email Address':this.value;">
+					<input type="password" class="input" value="password" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'password':this.value;">
+					<input type="button" class="login-btn" value="Login">
+  					<input type="button" class="register-btn flip-btn" value="Register an account">
+  				</form>
+			</div>
+			
+			<div class="back">
+				<h2>Create an account</h2>
+				<form>
+					<input type="text" class="input" value="Real Name" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Real Name':this.value;" />
+					<input type="text" class="input" value="Username" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Username':this.value;"/>
+					<input type="text" class="input" value="Email Address" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Email Address':this.value;"/>
+					<input type="text" class="input" value="Choose Password" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Choose Password':this.value;" />
+				<input type="button" class="create-btn" value="Create Account">
+				<input type="button" class="back-btn flip-btn" value="Go Back">
+				</form>
+			</div>
+			
+ 		</div>
+
+ 	</div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

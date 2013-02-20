@@ -1,7 +1,7 @@
 {
   "name": "ordercrunch-areana",
   "description": "An awesome Ordercrunch Arena",
-  "version": "0.0.1-10",
+  "version": "0.0.1-11",
   "author": "Ordercrunch <support@ordercrunchapp.com>",
   "private": true,
   "engines": {
@@ -12,7 +12,8 @@
     "ss-stylus": "0.1.x",
     "ss-hogan": "0.1.x",
     "ss-coffee": "*",
-    "ss-sockjs": "*"
+    "ss-sockjs": "*",
+    "ss-jade": "0.1.x"
   },
   "subdomain": "surat.ordercrunch-arena",
   "scripts": {

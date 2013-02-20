@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 24.0 (Mac)" package="" timestamp="2013-02-15T00:50:08" id="0" hostname="Aus-MacBook-Pro.local" tests="1" errors="0" failures="0" time="0.004">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17"/>
+    </properties>
+    <testcase name="should login" time="0.004" classname="Chrome 24.0 (Mac).auth"/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>

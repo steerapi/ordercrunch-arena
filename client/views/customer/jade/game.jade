@@ -1,32 +1,85 @@
-.li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static Select Game
-#gameCarousel.touchcarousel.black-and-white(oc-carousel)
-  ul.touchcarousel-container
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-    li.touchcarousel-item(id="game{{i}}", ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11]")
-      img(src='http://placehold.it/300x300', width='300', height='300')
-script
-  $(function(){
-    $('#gameCarousel').touchCarousel({});
-  });
-.li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static When?
+include seat
+select#where.f-dd(ng-model='state', name='Where', data-role="none", style="display:none;", ng-options="obj.name as obj.name for (abbr,obj) in statelist")
+  //- option(value='1') Atlanta
+  //- option(value='2') Berlin
+  //- option(value='3') Boston
+  //- option(value='4') Chicago
+  //- option(value='5') London
+  //- option(value='6') Los Angeles
+  //- option(value='7') New York
+  //- option(value='8') Paris
+  //- option(value='9') San Francisco
+#whenScroller(name="whenScroller", data-role="none", style="display:none;")
+//- 
+//- select#section.f-dd(name='Section', data-role="none", style="display:none;")
+//-   option(value='1') Atlanta
+//-   option(value='2') Berlin
+//-   option(value='3') Boston
+//-   option(value='4') Chicago
+//-   option(value='5') London
+//-   option(value='6') Los Angeles
+//-   option(value='7') New York
+//-   option(value='8') Paris
+//-   option(value='9') San Francisco
+//- 
+//- select#row.f-dd(name='Row', data-role="none", style="display:none;")
+//-   option(value='1') Atlanta
+//-   option(value='2') Berlin
+//-   option(value='3') Boston
+//-   option(value='4') Chicago
+//-   option(value='5') London
+//-   option(value='6') Los Angeles
+//-   option(value='7') New York
+//-   option(value='8') Paris
+//-   option(value='9') San Francisco
+//- 
+//- select#seat.f-dd(name='Seat #', data-role="none", style="display:none;")
+//-   option(value='1') Atlanta
+//-   option(value='2') Berlin
+//-   option(value='3') Boston
+//-   option(value='4') Chicago
+//-   option(value='5') London
+//-   option(value='6') Los Angeles
+//-   option(value='7') New York
+//-   option(value='8') Paris
+//-   option(value='9') San Francisco
 
-.li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static Where?
+
+div(data-role="header")
+  h1 Select Game
+div.container-fluid(data-role="page-content")
+  .container_12
+    .grid_6
+      .li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static Where?
+      a(data-role="button", ng-click="where()")
+        | {{state}}
+    .grid_6
+      .li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static When?
+      a(data-role="button", ng-click="when()")
+        | {{date}}
+  .li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static Where you sit?
+  .container_12
+    //- .grid_4
+    //-   a(data-role="button", ng-click="section()")
+    //-     | Section
+    //- .grid_4
+    //-   a(data-role="button", ng-click="row()")
+    //-     | Row
+    //- .grid_4
+    .grid_12
+      a(data-role="button", ng-click="seat()")
+        span(ng-show="seatNumber") Seat # {{seatNumber}}
+        span(ng-show="!seatNumber") Select seat
+  .li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static Select Game
+  #gameCarousel.touchcarousel.black-and-white(oc-carousel)
+    ul.touchcarousel-container
+      li.touchcarousel-item(id="game{{i}}")
+        img.border(src='images/games/thunder.jpg', width='300', height='300', ng-click="game()")
+      li.touchcarousel-item(id="game{{i}}")
+        img.border(src='images/games/rocket.gif', width='300', height='300', ng-click="game()")
+      li.touchcarousel-item(id="game{{i}}")
+        img.border(src='images/games/spur.gif', width='300', height='300', ng-click="game()")
+      li.touchcarousel-item(id="game{{i}}")
+        img.border(src='images/games/dallas.gif', width='300', height='300', ng-click="game()")
+        
+include footer

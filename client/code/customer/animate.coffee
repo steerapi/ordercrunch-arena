@@ -7,3 +7,4 @@ window.moveFromTo = (elm, tElm, dur=500)->
   target.height = 0
   elm.clone().positionOn(elm).appendTo(body).animate target, dur, ->
     $(this).remove()
+    

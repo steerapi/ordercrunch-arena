@@ -10,7 +10,8 @@ ss.server.on "ready", ->
   # Wait for the DOM to finish loading
   jQuery ->
     # Load app
-    require "/customer"
-    require "/carousel"
-    require "/animate"
+    require "./animate"
+    require "./index"
+    # require "/customer"
+    # require "/carousel"
 # $('.element').clone().clonePosition($('.element')).css('position','fixed').appendTo($('body')).animate(target, 1000, function(){ $(this).remove(); });

@@ -1,0 +1,8 @@
+ul#seat(data-role="none", style="display:none;")
+  li(ng-repeat="x in [1,2,3]", data-val='{{x}}')
+    | {{x}}
+    ul
+      li(ng-repeat="y in [0,1,2,3,4,5,6,7,8,9]", data-val='{{y}}')
+        | {{y}}
+        ul
+          li(ng-repeat="z in [0,1,2,3,4,5,6,7,8,9]", data-val='{{z}}') {{z}}

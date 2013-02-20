@@ -1,0 +1,44 @@
+div(data-role="header")
+  h1
+    | OrderCrunch
+script
+  $(function () {
+    $('#loginAccount .flip-btn').click(function () {
+      $('#loginAccount .flip-login').toggleClass('flipped');
+    });
+  });
+div(data-role="content")
+  //- div.ui-body-e(ngm-if="error", style="display:block;")
+  //-   h5(style="margin-left:20px;") {{error}}
+  //-   fieldset
+  //-     span.ui-btn-inner(ngm-vclick="clearError()", style="position:absolute;top:0px;right:0px;padding: 5px 5px 0px 0px;")
+  //-       span.ui-btn.ui-btn-up-e.ui-shadow.ui-btn-corner-all.ui-btn-icon-notext(data-theme="c",style="margin:0px;")
+  //-         span.ui-btn-inner.ui-btn-corner-all
+  //-           span.ui-icon.ui-icon-delete.ui-icon-shadow
+  #loginAccount.flip-container(style="z-index:9999;")
+    .flip-login
+      .front
+        div.logo-box
+          img(src='images/logo.png')
+        a.facebook(ngm-vclick="login('facebook')")
+          span.icon
+          span.white Login with Facebook
+        //- a.twitter(ngm-vclick="login('twitter')")
+        //-   span.icon
+        //-   span.white Login with Twitter
+        //- {{error}}
+        .or-divider
+        form.login-bg
+          input.input(data-role="none", ng-model="username", type='text', placeholder="Username")
+          input.input(data-role="none", ng-model="password", type='password', placeholder="Password")
+          input.login-btn(data-role="none", ng-click="login()", type='button', value='Login')
+          input.register-btn.flip-btn(data-role="none", type='button', value='Register an account')
+      .back
+        h2.white Create an account
+        form
+          input.input(data-role="none", ng-model="name", type='text', placeholder='Real Name')
+          input.input(data-role="none", ng-model="username", type='text', placeholder='Username')
+          input.input(data-role="none", ng-model="email", type='text', placeholder='Email Address')
+          input.input(data-role="none", ng-model="password", type='password', placeholder='Choose Password')
+          input.create-btn(data-role="none", ngm-vclick="signup()", type='button', value='Create Account')
+          input.back-btn.flip-btn(data-role="none", type='button', value='Go Back')

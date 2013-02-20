@@ -1,0 +1,156 @@
+select#time.f-dd(name='Delivery Time', data-role="none", style="display:none;")
+  option(value='1') 7:00pm
+  option(value='2') 7:15pm
+  option(value='3') 7:30pm
+  option(value='4') 7:45pm
+  option(value='5') 8:00pm
+
+div(data-role="header")
+  h1.container-fluid
+    a.container_12.white(href="#pageStat")
+      .grid_4
+        .container_12
+          | Thunder
+        .container_12
+          | 105
+      .grid_4
+        .container_12
+          | vs
+        .container_12
+          | Stats
+      .grid_4
+        .container_12
+          | Rockets
+        .container_12
+          | 107
+  //- a.ui-btn-right(href="#panel",data-icon="gear")
+  //-   | Options
+div#panel(data-role="panel", data-position="right")
+  ul(data-role="listview", data-icon="null")
+    li(data-role="fieldcontain", ng-class="{'ui-btn-active':page=='pageEat'}")
+      a(ng-click="seat()")
+        | Change Seat (231)
+    //- li(data-role="fieldcontain", ng-class="{'ui-btn-active':page=='pageOrders'}")
+    //-   a(ngm-vclick="goTo('pageOrders')")
+    //-     | Orders
+    //- li(data-role="fieldcontain", ng-class="{'ui-btn-active':page=='pageSettings'}")
+    //-   a(ngm-vclick="goTo('pageSettings')")
+    //-     | Account
+    //- li(data-role="fieldcontain")
+    //-   a(ngm-vclick="logout()")
+    //-     | Logout
+
+div.body-with-control(data-role="content", style="padding:0px")
+  div.ui-footer(data-role="navbar")
+    ul
+      li
+        a#tabHim.ui-btn-active.ui-state-persist(data-icon="custom")
+      li
+        a#tabHer(data-icon="custom")
+      li
+        a#tabKids(data-icon="custom")
+  .li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static(style="padding-top:0px;padding-bottom:0px;")
+    span Special: Would you like to add Fried for $2?
+    a(data-role="button",data-mini="true",data-inline="true") Ok
+  div.li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static Food
+  #mainCarousel.touchcarousel.black-and-white.noscrollbar(oc-carousel)
+    ul.touchcarousel-container
+      li.touchcarousel-item.pos-relative(id="foodBBQ Shrimp.jpg")
+        img.border(style="position:relative", src='images/food/BBQ Shrimp.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodBeer_Cheese_dip.jpg")
+        img.border(src='images/food/Beer_Cheese_dip.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodBlueCheese Sirloin Mac.jpg")
+        img.border(src='images/food/BlueCheese Sirloin Mac.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodChicago_Dog.jpg")
+        img.border(src='images/food/Chicago_Dog.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodFish Taco.jpg")
+        img.border(src='images/food/Fish Taco.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodHer_Black_Bean_Veggie_Burger.jpg")
+        img.border(src='images/food/Her_Black_Bean_Veggie_Burger.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodHer_Chinese_Chicken_Salad.jpg")
+        img.border(src='images/food/Her_Chinese_Chicken_Salad.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodher_Sloppy_Jane.jpg")
+        img.border(src='images/food/her_Sloppy_Jane.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodHim_Mini_Buffalo_Chicken_Sandwiches.jpg")
+        img.border(src='images/food/Him_Mini_Buffalo_Chicken_Sandwiches.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodhot dog.jpg")
+        img.border(src='images/food/hot dog.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodshrimp burger.png")
+        img.border(src='images/food/shrimp burger.png', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodSignature Crab Cakes.jpg")
+        img.border(src='images/food/Signature Crab Cakes.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="foodtailgatechili.jpg")
+        img.border(src='images/food/tailgatechili.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+  div.li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static Drink
+  #drinkCarousel.touchcarousel.black-and-white.noscrollbar(oc-carousel)
+    ul.touchcarousel-container
+      li.touchcarousel-item.pos-relative(id="drinkmichelada-thumb.jpg")
+        img.border(src='images/drink/michelada-thumb.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="drinkSave_As_Drink_Merlot.jpg")
+        img.border(src='images/drink/Save_As_Drink_Merlot.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="drinkUltimate Mint Julep.jpg")
+        img.border(src='images/drink/Ultimate Mint Julep.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+  div.li.ui-li.ui-li-divider.ui-bar-b.ui-li-last.ui-li-static Gear
+  #gearCarousel.touchcarousel.black-and-white.noscrollbar(oc-carousel)
+    ul.touchcarousel-container
+      li.touchcarousel-item.pos-relative(id="gearCap.jpg")
+        img.border(src='images/gear/Cap.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="gearGlass.jpg")
+        img.border(src='images/gear/Glass.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="gearJames-Harden-Jerseys-Houston-Rockets.jpg")
+        img.border(src='images/gear/James-Harden-Jerseys-Houston-Rockets.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="gearJeremy Lin Signed Basketball.jpg")
+        img.border(src='images/gear/Jeremy Lin Signed Basketball.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+      li.touchcarousel-item.pos-relative(id="gearPoster.jpg")
+        img.border(src='images/gear/Poster.jpg', width='120', height='120', ng-click="add($event)")
+        include count
+
+div.paynow-outter
+  fieldset.paynow-inner
+    .container_12
+      .grid_5
+        a#iconClock(data-role="button", data-icon="custom", ng-click="time()") 7:30pm
+      .grid_7.target
+        a#iconBox(data-role="button", data-icon="custom", data-theme="a") Pay Now
+      //- .grid_4
+      //-   a(data-role="button") Hello
+
+      //- .grid_1
+      //-   a.ui-li-link-alt.ui-btn.ui-btn-icon-notext(ng-click="time()", style="left:0px;margin-left: 2.5%;")
+      //-     span.ui-btn-inner
+      //-       span.ui-btn.ui-btn-up-a.ui-shadow.ui-btn-corner-all.ui-btn-icon-notext(data-theme="a")
+      //-         span.ui-btn-inner.ui-btn-corner-all
+      //-           span.ui-icon.ui-icon-gear.ui-icon-shadow
+      //-     | 7:30pm
+      //-         
+      //- .grid_9(style="margin-left: 12.5%;")
+      //-   div.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-up-a(ngm-vclick="eat()")
+      //-     span.ui-btn-inner.ui-btn-corner-all
+      //-       span.ui-btn-text Pay Now
+      //- .grid_1
+      //-   a.ui-li-link-alt.ui-btn.ui-btn-icon-notext(href="#panel", style="right:0px;margin-right: 2.5%;")
+      //-     span.ui-btn-inner
+      //-       span.ui-btn.ui-btn-up-a.ui-shadow.ui-btn-corner-all.ui-btn-icon-notext
+      //-         span.ui-btn-inner.ui-btn-corner-all
+      //-           span.ui-icon.ui-icon-cart.ui-icon-shadow
+include footer

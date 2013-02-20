@@ -1,0 +1,74 @@
+.ui-footer .ui-icon-custom.ui-icon {
+	width: 32px;
+	height: 32px;
+	margin-left: -12px;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+}
+#tabGame .ui-icon {
+	background: url(icons/11-clock.png) 0 0 no-repeat;
+}
+#tabGame.ui-btn-active .ui-icon {
+	background: url(icons/11-clock.png) 0 0 no-repeat;
+}
+#tabShop .ui-icon {
+	background: url(icons/236-shoppingbag.png) 0 0 no-repeat;
+}
+#tabShop.ui-btn-active .ui-icon {
+	background: url(icons/236-shoppingbag.png) 0 0 no-repeat;
+}
+#tabOrders .ui-icon {
+	background: url(icons/259-list.png) 0 0 no-repeat;
+}
+#tabOrders.ui-btn-active .ui-icon {
+	background: url(icons/259-list.png) 0 0 no-repeat;
+}
+#tabStats .ui-icon {
+	background: url(icons/250-stats.png) 0 0 no-repeat;
+  margin-left: -16px;
+}
+#tabStats.ui-btn-active .ui-icon {
+	background: url(icons/250-stats.png) 0 0 no-repeat;
+  margin-left: -16px;
+}
+#tabAccount .ui-icon {
+	background: url(icons/253-person.png) 0 0 no-repeat;
+}
+#tabAccount.ui-btn-active .ui-icon {
+	background: url(icons/253-person.png) 0 0 no-repeat;
+}
+#tabHim .ui-icon {
+	background: url(icons/44-man.png) 0 0 no-repeat;
+}
+#tabHim.ui-btn-active .ui-icon {
+	background: url(icons/44-man.png) 0 0 no-repeat;
+}
+#tabHer .ui-icon {
+	background: url(icons/59-woman.png) 0 0 no-repeat;
+}
+#tabHer.ui-btn-active .ui-icon {
+	background: url(icons/59-woman.png) 0 0 no-repeat;
+}
+#tabKids .ui-icon {
+	background: url(icons/76-baby.png) 0 0 no-repeat;
+}
+#tabKids.ui-btn-active .ui-icon {
+	background: url(icons/76-baby.png) 0 0 no-repeat;
+}
+#iconClock .ui-icon {
+	background: url(mini-icons/19-clock.png) 0 0 no-repeat;
+}
+#iconClock.ui-btn-active .ui-icon {
+	background: url(mini-icons/19-clock.png) 0 0 no-repeat;
+}
+#iconBox .ui-icon {
+	background: url(mini-icons/25-box.png) 0 0 no-repeat;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+}
+#iconBox.ui-btn-active .ui-icon {
+	background: url(mini-icons/25-box.png) 0 0 no-repeat;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+}
+

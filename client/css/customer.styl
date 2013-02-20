@@ -1,2 +1,120 @@
 @import 'libs/reset.css'
 @import 'nib'
+
+
+#mainCarousel,#drinkCarousel,#gearCarousel
+  width: 100%;			
+  height: 124px;
+#gameCarousel
+  width: 100%;
+  height: 304px;
+
+.stylish {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 66px;
+  border: 4px double #ccc;
+  font-size: 20px;
+  color: #666;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  background: #ddd
+}
+.stylish:hover {
+  border: 4px double #bbb;
+  color: #aaa;
+  text-decoration: none;
+  background: #e6e6e6
+}
+.center
+  margin:0 auto;
+  float:none;
+// .element {
+//   opacity: 0.0;
+//   transform: scale(0.95) translate3d(0,100%,0);
+//   transition: transform 400ms ease, opacity 400ms ease;
+// }
+.element.active {
+  position: fixed;
+  transition: left 400ms, top 400ms;
+}
+// .element.inactive {
+//   position: fixed;
+//   left: 100px;
+//   top: 100px;
+//   transition: left 400ms, top 400ms;
+// }
+
+.paynow-outter
+  height: 53px;
+  // padding-bottom: 5px;
+  // padding-top: 5px;
+  border-bottom-color: #aaa;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  box-shadow: rgba(0,0,0,0.298) 0px 1px 4px 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f9f9f9;
+  position: fixed;
+  bottom: 66px;
+.paynow-inner
+  width: 90%;
+  margin-left: 5% !important;
+
+.hr {
+	width: 960px;
+	height: 11px;
+	background: url(../images/hr.png) no-repeat;
+	display: block;
+	margin: 40px auto;
+}
+
+.nomargin
+  margin: 0px !important;
+.noscrollbar::-webkit-scrollbar { 
+  display: none; 
+}
+.body-with-control
+  margin-bottom: 56px;
+
+.i-txt{display:none}
+
+
+.logo-box {
+  text-align: center;
+  margin: 10px;
+}
+.white{
+  color: white !important;
+}
+.foodcount{
+  position:absolute !important;
+  top:0px !important;
+  right:0px !important;
+  opacity:0.5 !important;
+}
+.pos-relative{
+  position:relative !important;
+}
+img.border {
+   padding:1px;
+   border:1px solid #021a40;
+   // background-color:#ff0;
+}
+
+#loginAccount .flip-login, .front {
+  height: 360px !important;
+}
+#editAccount .flip-login{
+  height: 250px !important;
+  .back{
+   height: 250px;
+   form{
+     height: 100px;
+   }
+  }
+} 
